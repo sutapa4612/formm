@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Index</title>
+</head>
+<body>
+<form  method="post" action="loginServlet" onsubmit="return logfrm()">
+     Username: <input type="text" name="username" id="ud"/> <br/> <br/>
+    Password: <input type="password" name="password" id="pas" /> <br/> <br/>
+    <input type="submit" value="Login" />
+    
+</form>
+
+<script>
+function logfrm()
+{
+	var name=document.getElementById("ud").value;
+	var pass=document.getElementById("pas").value;
+
+
+	if(name=="" && pass == ""){
+	alert("enter every fields");
+	return false;
+	}
+
+	if(name==""){
+	alert("enter name");
+	return false;
+	}
+
+
+    if(pass==""){
+	alert("enter pass");
+	return false;
+	}
+
+	if(name=="sutapa" && pass=="1234"){
+		alert("valid user");
+	}
+		
+    else{
+	alert("invalid");
+	return false;
+	}
+	
+	
+	
+	return true;
+	}
+
+
+	
+	
+
+</script>
+</body>
+</html>
